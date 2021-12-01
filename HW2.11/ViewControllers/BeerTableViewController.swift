@@ -13,6 +13,16 @@ class BeerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        NetworkManager.shared.fetchBeerWuthAlamofire(link) { result in
+            switch result {
+            case .success(let beers):
+                self.beers = beers
+                self.tableView.reloadData()
+            case .failure(let error):
+                print (error)
+            }
+        }
 
     }
 
@@ -26,30 +36,7 @@ class BeerTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BeerTableViewCell
         cell.configure(with: beers[indexPath.row])
         return cell
-    }
-}
-    //MARK: - Networking
-    
-extension BeerTableViewController {
-    func fetchBeers () {
-        guard let url = URL(string: link) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print (error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                self.beers = try JSONDecoder().decode([Beer].self, from: data)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            } catch let error {
-                print (error.localizedDescription)
-            }
-        }.resume()
-    }
-    
+    }    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

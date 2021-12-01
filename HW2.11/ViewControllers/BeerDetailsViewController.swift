@@ -24,13 +24,12 @@ class BeerDetailsViewController: UIViewController {
         title = beer.name
         beerDescription.text = beer.beerDescription
         
-        DispatchQueue.global().async {
-            guard let stringURL = self.beer.imageURL else { return }
-            guard let url = URL(string: stringURL) else { return }
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            
-            DispatchQueue.main.async {
-                self.beerLogoImage.image = UIImage(data: imageData)
+        NetworkManager.shared.fetchImage(from: beer.imageURL ?? "") { result in
+            switch result {
+            case .success(let image):
+                self.beerLogoImage.image = UIImage(data: image)
+            case .failure(let error):
+                print (error.localizedDescription)
             }
         }
     }

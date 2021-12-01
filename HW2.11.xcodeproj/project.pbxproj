@@ -81,20 +81,68 @@
 		B6DB54822757CB1000C1BB01 /* HW2.11 */ = {
 			isa = PBXGroup;
 			children = (
-				B6DB54832757CB1000C1BB01 /* AppDelegate.swift */,
-				B6DB54852757CB1000C1BB01 /* SceneDelegate.swift */,
-				B6DB54872757CB1000C1BB01 /* ViewController.swift */,
-				B6DB54972757CB4B00C1BB01 /* BeerTableViewController.swift */,
-				B6DB54992757CB7000C1BB01 /* Beer.swift */,
-				B6DB549B2757CBD600C1BB01 /* BeerTableViewCell.swift */,
-				B6DB549D2757CBFE00C1BB01 /* BeerDetailsViewController.swift */,
-				B6DB549F2757CDF900C1BB01 /* NetworkManager.swift */,
-				B6DB54892757CB1000C1BB01 /* Main.storyboard */,
-				B6DB548C2757CB1500C1BB01 /* Assets.xcassets */,
-				B6DB548E2757CB1500C1BB01 /* LaunchScreen.storyboard */,
-				B6DB54912757CB1500C1BB01 /* Info.plist */,
+				B6DB54A527580CF100C1BB01 /* Storyboards */,
+				B6DB54A127580C8D00C1BB01 /* ViewControllers */,
+				B6DB54A227580CB200C1BB01 /* Models */,
+				B6DB54A327580CC000C1BB01 /* Views */,
+				B6DB54A427580CD800C1BB01 /* Services */,
+				B6DB54A627580D1000C1BB01 /* App */,
 			);
 			path = HW2.11;
+			sourceTree = "<group>";
+		};
+		B6DB54A127580C8D00C1BB01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB54872757CB1000C1BB01 /* ViewController.swift */,
+				B6DB549D2757CBFE00C1BB01 /* BeerDetailsViewController.swift */,
+				B6DB54972757CB4B00C1BB01 /* BeerTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6DB54A227580CB200C1BB01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB54992757CB7000C1BB01 /* Beer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6DB54A327580CC000C1BB01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB549B2757CBD600C1BB01 /* BeerTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6DB54A427580CD800C1BB01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB549F2757CDF900C1BB01 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B6DB54A527580CF100C1BB01 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB548E2757CB1500C1BB01 /* LaunchScreen.storyboard */,
+				B6DB54892757CB1000C1BB01 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6DB54A627580D1000C1BB01 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB548C2757CB1500C1BB01 /* Assets.xcassets */,
+				B6DB54852757CB1000C1BB01 /* SceneDelegate.swift */,
+				B6DB54832757CB1000C1BB01 /* AppDelegate.swift */,
+				B6DB54912757CB1500C1BB01 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		CE7178101CB6B16391FD6D9A /* Pods */ = {
@@ -103,7 +151,6 @@
 				A0C23CE2211F6DCBACD1A38D /* Pods-HW2.11.debug.xcconfig */,
 				899EDEC9D143D341C198E22C /* Pods-HW2.11.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -380,7 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.11/Info.plist;
+				INFOPLIST_FILE = HW2.11/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -408,7 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.11/Info.plist;
+				INFOPLIST_FILE = HW2.11/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

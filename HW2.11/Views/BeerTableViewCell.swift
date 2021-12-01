@@ -20,13 +20,13 @@ class BeerTableViewCell: UITableViewCell {
         ibuLabel.text = "IBU is: \(beer.ibu ?? 0)"
         abvLabel.text = "ABV is: \(beer.abv ?? 0)"
         
-        DispatchQueue.global().async {
-            guard let stringUrl = beer.imageURL else { return }
-            guard let url = URL(string: stringUrl) else { return }
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            
-            DispatchQueue.main.async {
-                self.imageBeer.image = UIImage(data: imageData)
+        NetworkManager.shared.fetchImage(from: beer.imageURL ?? "") { result in
+            switch result {
+                
+            case .success(let image):
+                self.imageBeer.image = UIImage(data: image)
+            case .failure(let error):
+                print (error)
             }
         }
     }
