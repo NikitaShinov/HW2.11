@@ -13,6 +13,11 @@
 		B6DB548B2757CB1000C1BB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DB54892757CB1000C1BB01 /* Main.storyboard */; };
 		B6DB548D2757CB1500C1BB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DB548C2757CB1500C1BB01 /* Assets.xcassets */; };
 		B6DB54902757CB1500C1BB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DB548E2757CB1500C1BB01 /* LaunchScreen.storyboard */; };
+		B6DB54982757CB4B00C1BB01 /* BeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB54972757CB4B00C1BB01 /* BeerTableViewController.swift */; };
+		B6DB549A2757CB7000C1BB01 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB54992757CB7000C1BB01 /* Beer.swift */; };
+		B6DB549C2757CBD600C1BB01 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB549B2757CBD600C1BB01 /* BeerTableViewCell.swift */; };
+		B6DB549E2757CBFE00C1BB01 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB549D2757CBFE00C1BB01 /* BeerDetailsViewController.swift */; };
+		B6DB54A02757CDFA00C1BB01 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB549F2757CDF900C1BB01 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B6DB548C2757CB1500C1BB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6DB548F2757CB1500C1BB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6DB54912757CB1500C1BB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DB54972757CB4B00C1BB01 /* BeerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewController.swift; sourceTree = "<group>"; };
+		B6DB54992757CB7000C1BB01 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		B6DB549B2757CBD600C1BB01 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		B6DB549D2757CBFE00C1BB01 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
+		B6DB549F2757CDF900C1BB01 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				B6DB54832757CB1000C1BB01 /* AppDelegate.swift */,
 				B6DB54852757CB1000C1BB01 /* SceneDelegate.swift */,
 				B6DB54872757CB1000C1BB01 /* ViewController.swift */,
+				B6DB54972757CB4B00C1BB01 /* BeerTableViewController.swift */,
+				B6DB54992757CB7000C1BB01 /* Beer.swift */,
+				B6DB549B2757CBD600C1BB01 /* BeerTableViewCell.swift */,
+				B6DB549D2757CBFE00C1BB01 /* BeerDetailsViewController.swift */,
+				B6DB549F2757CDF900C1BB01 /* NetworkManager.swift */,
 				B6DB54892757CB1000C1BB01 /* Main.storyboard */,
 				B6DB548C2757CB1500C1BB01 /* Assets.xcassets */,
 				B6DB548E2757CB1500C1BB01 /* LaunchScreen.storyboard */,
@@ -138,7 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DB549E2757CBFE00C1BB01 /* BeerDetailsViewController.swift in Sources */,
 				B6DB54882757CB1000C1BB01 /* ViewController.swift in Sources */,
+				B6DB549C2757CBD600C1BB01 /* BeerTableViewCell.swift in Sources */,
+				B6DB54982757CB4B00C1BB01 /* BeerTableViewController.swift in Sources */,
+				B6DB54A02757CDFA00C1BB01 /* NetworkManager.swift in Sources */,
+				B6DB549A2757CB7000C1BB01 /* Beer.swift in Sources */,
 				B6DB54842757CB1000C1BB01 /* AppDelegate.swift in Sources */,
 				B6DB54862757CB1000C1BB01 /* SceneDelegate.swift in Sources */,
 			);
